@@ -1,0 +1,4 @@
+.col6 {
+  display: flex;
+  flex-basis: 50%;
+}

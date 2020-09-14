@@ -1,0 +1,4 @@
+.col9 {
+  display: flex;
+  flex-basis: 75%;
+}
