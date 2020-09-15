@@ -5,25 +5,25 @@
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: var(--breakpoint-sm)) {
   .row {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: var(--breakpoint-md)) {
   .row {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: var(--breakpoint-lg)) {
   .row {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: var(--breakpoint-xl)) {
   .row {
     width: 100%;
   }
