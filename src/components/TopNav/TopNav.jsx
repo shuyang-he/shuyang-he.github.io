@@ -4,7 +4,6 @@ import Container from "../../containers/Container/Container";
 import Row from "../../containers/Row/Row";
 import TopLink from "../TopLink/TopLink";
 import TopDrop from "../TopDrop/TopDrop";
-import topDrop from "../TopDrop/TopDrop";
 
 const topNav = () => {
   return (
