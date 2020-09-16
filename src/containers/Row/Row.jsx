@@ -1,8 +1,12 @@
 import React from "react";
-import style from "./Row.scss";
+import "./Row.scss";
 
-const row = ({ children }) => {
-  return <div className={style.row}>{children}</div>;
+const row = ({ children, className }) => {
+  return (
+    <div className={`row ${className === undefined ? "" : className}`}>
+      {children}
+    </div>
+  );
 };
 
 export default row;

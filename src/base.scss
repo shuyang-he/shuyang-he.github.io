@@ -1,0 +1,24 @@
+:root {
+  --font-family-sans-serif: Helvetica, Arial, sans-serif;
+  --font-family-monospace: "Monaco", "Courier New", monospace;
+  --font-size-xs: 16px;
+  --font-size-sm: 18px;
+  --font-size-md: 21px;
+  --font-size-lg: 26px;
+  --font-size-xl: 40px;
+  --color-transparent: transparent;
+  --color-dark: black;
+  --color-mild-dark: dimgray;
+  --color-dim-medium: gray;
+  --color-medium: darkgray;
+  --color-bright-medium: silver;
+  --color-mild-light: lightgray;
+  --color-light: white;
+  --color-main: lightskyblue;
+}
+
+$breakpoint-xs: 0px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

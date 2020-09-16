@@ -1,3 +1,5 @@
+@import "../../base";
+
 .container {
   max-width: 90%;
   margin: auto;
@@ -6,26 +8,26 @@
   align-items: stretch;
 }
 
-@media screen and (min-width: var(--breakpoint-sm)) {
+@media screen and (min-width: $breakpoint-sm) {
   .container {
-    max-width: 90%;
+    max-width: 88%;
   }
 }
 
-@media screen and (min-width: var(--breakpoint-md)) {
+@media screen and (min-width: $breakpoint-md) {
   .container {
-    max-width: 90%;
+    max-width: 85%;
   }
 }
 
-@media screen and (min-width: var(--breakpoint-lg)) {
+@media screen and (min-width: $breakpoint-lg) {
   .container {
-    max-width: 90%;
+    max-width: 83%;
   }
 }
 
-@media screen and (min-width: var(--breakpoint-xl)) {
+@media screen and (min-width: $breakpoint-xl) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
   }
 }

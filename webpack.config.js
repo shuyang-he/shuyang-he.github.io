@@ -30,28 +30,11 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-            },
-          },
-        ],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-            },
-          },
-          "sass-loader",
-        ],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
