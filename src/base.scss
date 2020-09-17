@@ -26,3 +26,8 @@ $breakpoint-xl: 1200px;
 html {
   scroll-behavior: smooth;
 }
+
+#root {
+  height: 100vh;
+  overflow: auto;
+}
