@@ -42,3 +42,11 @@
     display: flex;
   }
 }
+
+@media screen and (min-width: $breakpoint-xl) {
+  .top-link {
+    height: 40%;
+    flex-direction: column;
+    flex-grow: 0;
+  }
+}

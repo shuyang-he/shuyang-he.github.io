@@ -1,4 +1,11 @@
+@import "../../base";
+
 .top-nav {
+  $nav-height: 60px;
+  $img-size: 40px;
+  $button-size: 30px;
+  $button-shape-height: 2px;
+
   position: fixed;
   z-index: 9;
   top: 0px;
@@ -7,12 +14,12 @@
   background-color: var(--color-mild-dark);
 
   &__main {
-    height: 60px;
+    height: $nav-height;
     border-bottom: 1px solid var(--color-mild-light);
   }
 
   &__content {
-    height: 60px;
+    height: $nav-height;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,21 +27,22 @@
   }
 
   &__img {
-    width: 40px;
-    height: 40px;
+    width: $img-size;
+    height: $img-size;
     border: 2px solid var(--color-dim-medium);
     border-radius: 50%;
   }
 
   &__button-shape {
     width: 25px;
-    height: 2px;
+    height: $button-shape-height;
     background-color: var(--color-mild-light);
+    transition: 0.3s ease;
   }
 
   &__button {
-    width: 30px;
-    height: 30px;
+    width: $button-size;
+    height: $button-size;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -42,7 +50,7 @@
 
     &--active {
       .top-nav__button-shape:nth-child(1) {
-        transform: rotate(45deg);
+        transform: translateY($button-size / 4 + 0.5) rotate(45deg);
       }
 
       .top-nav__button-shape:nth-child(2) {
@@ -50,8 +58,44 @@
       }
 
       .top-nav__button-shape:nth-child(3) {
-        transform: rotate(-45deg);
+        transform: translateY(-($button-size / 4 + 0.5)) rotate(-45deg);
       }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .top-nav__button {
+    visibility: hidden;
+    cursor: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .top-nav {
+    $nav-height: 100vh;
+    $img-size: 150px;
+
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 20%;
+
+    &__main {
+      height: $nav-height;
+      border-bottom: none;
+    }
+
+    &__content {
+      height: $nav-height;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__img {
+      width: $img-size;
+      height: $img-size;
+      border: 7px solid var(--color-dim-medium);
     }
   }
 }

@@ -500,6 +500,7 @@ button {
   padding: 0px;
   margin: 0px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 input,

@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import topNavDropDisplay from "./TopNavDropDisplay";
+import topDropDisplay from "./TopDropDisplay";
 
 export default combineReducers({
-  topNavDropDisplay,
+  topDropDisplay,
 });
