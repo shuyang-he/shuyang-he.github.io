@@ -1,5 +1,5 @@
 :root {
-  --font-family-sans-serif: Helvetica, Arial, sans-serif;
+  --font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
   --font-family-monospace: "Monaco", "Courier New", monospace;
   --font-size-xs: 16px;
   --font-size-sm: 18px;
@@ -23,11 +23,17 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
+$personal-logo: "../../assets/img/Max.jpg";
+
 html {
   scroll-behavior: smooth;
 }
 
-#root {
+body {
   height: 100vh;
   overflow: auto;
+}
+
+#root {
+  height: 100%;
 }

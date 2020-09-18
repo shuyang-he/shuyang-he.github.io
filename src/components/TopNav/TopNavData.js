@@ -1,5 +1,4 @@
 const data = {
-  img: "assets/img/max.jpg",
   links: [
     { title: "ABOUT", content: "#about" },
     { title: "EDUCATION", content: "#education" },

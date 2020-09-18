@@ -14,9 +14,7 @@ const topNav = ({ topDropDisplay, handleTopDropDisplay }) => {
       <div className={`top-nav__main`}>
         <Container>
           <Row className={`top-nav__content`}>
-            <div>
-              <img className={`top-nav__img`} src={data.img} />
-            </div>
+            <div className={`top-nav__img`}></div>
             <TopLink links={data.links} />
             <button
               className={`top-nav__button ${

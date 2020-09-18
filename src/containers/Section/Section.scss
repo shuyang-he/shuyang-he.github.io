@@ -1,4 +1,8 @@
 .section {
   height: 100%;
   border-bottom: 1px solid var(--color-bright-medium);
+
+  &__container {
+    height: 100%;
+  }
 }

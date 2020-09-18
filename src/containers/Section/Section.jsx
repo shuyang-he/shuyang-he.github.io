@@ -5,7 +5,7 @@ import "./Section.scss";
 const section = ({ children }) => {
   return (
     <div className={`section`}>
-      <Container>{children}</Container>
+      <Container className={`section__container`}>{children}</Container>
     </div>
   );
 };
