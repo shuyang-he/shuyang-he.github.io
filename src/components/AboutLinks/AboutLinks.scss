@@ -1,4 +1,13 @@
 .about-links {
+  $img-size: 40px;
+  $link-width: $img-size * 1.3;
+
+  width: $link-width * 2;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
+  &__img {
+    height: $img-size;
+  }
 }
