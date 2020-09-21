@@ -1,11 +1,4 @@
 :root {
-  --font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
-  --font-family-monospace: "Monaco", "Courier New", monospace;
-  --font-size-xs: 16px;
-  --font-size-sm: 18px;
-  --font-size-md: 21px;
-  --font-size-lg: 40px;
-  --font-size-xl: 60px;
   --color-transparent: transparent;
   --color-dark: black;
   --color-mild-dark: dimgray;
@@ -22,18 +15,9 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+$nav-number: 5;
+$nav-transition-duration: 0.3s;
 
 $personal-logo: "../../assets/img/Max.jpg";
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  height: 100vh;
-  overflow: auto;
-}
-
-#root {
-  height: 100%;
-}

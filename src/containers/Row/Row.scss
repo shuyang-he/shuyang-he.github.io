@@ -4,27 +4,3 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-@media screen and (min-width: var(--breakpoint-sm)) {
-  .row {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: var(--breakpoint-md)) {
-  .row {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: var(--breakpoint-lg)) {
-  .row {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: var(--breakpoint-xl)) {
-  .row {
-    width: 100%;
-  }
-}

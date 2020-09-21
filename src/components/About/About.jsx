@@ -8,9 +8,9 @@ const about = () => {
     <div className={`about`}>
       <div className={`about__title`}>
         <h1 className={`about__name`}>{data.name}</h1>
-        <p className={`about__contact`}>{data.contact}</p>
+        <h5 className={`about__contact`}>{data.contact}</h5>
       </div>
-      <p className={`about__content`}>{data.content}</p>
+      <h4 className={`about__content`}>{data.content}</h4>
       <AboutLinks />
     </div>
   );

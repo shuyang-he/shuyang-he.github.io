@@ -41,7 +41,7 @@
     width: 25px;
     height: $button-shape-height;
     background-color: var(--color-mild-light);
-    transition: 0.3s ease;
+    transition: $nav-transition-duration ease;
   }
 
   &__button {
@@ -78,7 +78,7 @@
 @media screen and (min-width: $breakpoint-xl) {
   .top-nav {
     $nav-height: 100vh;
-    $img-size: 150px;
+    $img-size: 20rem;
 
     top: 0px;
     bottom: 0px;
@@ -99,7 +99,7 @@
     &__img {
       width: $img-size;
       height: $img-size;
-      border: 7px solid var(--color-dim-medium);
+      border: 1rem solid var(--color-dim-medium);
     }
   }
 }

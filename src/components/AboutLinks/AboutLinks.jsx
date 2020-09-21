@@ -5,9 +5,9 @@ import "./AboutLinks.scss";
 const aboutLinks = () => {
   return (
     <ul className={`about-links`}>
-      {data.map((item) => {
+      {data.map((item, index) => {
         return (
-          <li>
+          <li key={index} className={`about-links__item`}>
             <a href={item.link} className={`about-links__link`}>
               <img src={item.img} className={`about-links__img`} />
             </a>

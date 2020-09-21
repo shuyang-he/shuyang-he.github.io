@@ -7,9 +7,11 @@ const topLink = ({ links }) => {
       {links.map((item, index) => {
         return (
           <li key={index}>
-            <a href={item.content} className={`top-link__link`}>
-              {item.title}
-            </a>
+            <h5>
+              <a href={item.content} className={`top-link__link`}>
+                {item.title}
+              </a>
+            </h5>
           </li>
         );
       })}

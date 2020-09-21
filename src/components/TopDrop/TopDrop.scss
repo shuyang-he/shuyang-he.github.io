@@ -1,16 +1,17 @@
+@import "../../base";
+
 .top-drop {
-  $item-height: 60px;
-  $transition-duration: 0.3s;
+  $item-height: 10em;
 
   width: 100%;
   height: 0px;
   display: flex;
   flex-direction: column;
   opacity: 0;
-  transition: $transition-duration ease;
+  transition: $nav-transition-duration ease;
 
   &--active {
-    height: $item-height * 5;
+    height: $item-height * $nav-number;
     opacity: 1;
   }
 
@@ -22,21 +23,19 @@
 
   &__link {
     position: relative;
-    font-family: var(--font-family-sans-serif);
-    font-size: var(--font-size-sm);
     color: var(--color-light);
 
     &::after {
       content: "";
       position: absolute;
       left: 0px;
-      bottom: -5px;
+      bottom: -0.2em;
       width: 100%;
-      height: 2px;
+      height: 0.1em;
       background-color: var(--color-light);
       transform: scaleX(0);
       transform-origin: left;
-      transition: 0.2s ease;
+      transition: $nav-transition-duration ease;
     }
 
     &:hover::after {

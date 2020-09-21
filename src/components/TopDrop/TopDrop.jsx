@@ -8,9 +8,11 @@ const topDrop = ({ links, topDropDisplay }) => {
       {links.map((item, index) => {
         return (
           <li key={index} className={`top-drop__item`}>
-            <a href={item.content} className={`top-drop__link`}>
-              {item.title}
-            </a>
+            <h5>
+              <a href={item.content} className={`top-drop__link`}>
+                {item.title}
+              </a>
+            </h5>
           </li>
         );
       })}

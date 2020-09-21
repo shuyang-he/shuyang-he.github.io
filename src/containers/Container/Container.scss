@@ -31,3 +31,9 @@
     max-width: 80%;
   }
 }
+
+@media screen and (min-width: $breakpoint-xxl) {
+  .container {
+    max-width: 78%;
+  }
+}

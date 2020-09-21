@@ -1,30 +1,25 @@
 .about {
-  $item-margin-bottom: 40px;
+  $content-color: var(--color-dim-medium);
 
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: var(--font-family-sans-serif);
 
   &__name {
-    font-family: inherit;
-    font-size: var(--font-size-xl);
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 0.2rem;
   }
 
   &__contact {
-    font-family: inherit;
-    font-size: var(--font-size-sm);
-    margin-bottom: $item-margin-bottom;
+    color: $content-color;
+    margin-bottom: 2rem;
     white-space: pre;
   }
 
   &__content {
-    font-family: inherit;
-    font-size: var(--font-size-sm);
-    margin-bottom: $item-margin-bottom;
+    color: $content-color;
+    margin-bottom: 5rem;
   }
 }

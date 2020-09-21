@@ -3,16 +3,14 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "./store/index";
 import App from "./App";
-import "./normalize.css";
+import "normalize.css";
+import "./reset.scss";
+import "./typography.scss";
 import "./base.scss";
 
-try {
-  ReactDOM.render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
-    document.querySelector("#root")
-  );
-} catch (error) {
-  console.log(error);
-}
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.querySelector("#root")
+);

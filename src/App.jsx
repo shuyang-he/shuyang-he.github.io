@@ -4,6 +4,7 @@ import TopNav from "./components/TopNav/TopNav";
 import NavBanner from "./components/NavBanner/NavBanner";
 import Main from "./containers/Main/Main";
 import Section from "./containers/Section/Section";
+import SectionTitle from "./components/SectionTitle/SectionTitle";
 import About from "./components/About/About";
 import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
@@ -23,16 +24,20 @@ class App extends Component {
                 <About />
               </Section>
               <Section>
-                <Education />
+                <SectionTitle title={`EDUCATION`}>
+                  <Education />
+                </SectionTitle>
               </Section>
               <Section>
-                <Experience />
+                <SectionTitle title={`EXPERIENCE`}>
+                  <Experience />
+                </SectionTitle>
               </Section>
               <Section>
-                <Projects />
+                <SectionTitle title={`PROJECTS`}></SectionTitle>
               </Section>
               <Section>
-                <Skills />
+                <SectionTitle title={`SKILLS`}></SectionTitle>
               </Section>
             </Main>
           </Route>

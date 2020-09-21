@@ -1,0 +1,69 @@
+@import "./base";
+
+html {
+  font-size: 1vw;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+p,
+span {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  html {
+    font-size: 0.9vw;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  html {
+    font-size: 0.8vw;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  html {
+    font-size: 0.7vw;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  html {
+    font-size: 0.6vw;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xxl) {
+  html {
+    font-size: 0.5vw;
+  }
+}
