@@ -1,7 +1,7 @@
 @import "./base";
 
 html {
-  font-size: 1vw;
+  font-size: 100px;
 }
 
 body {
@@ -10,60 +10,60 @@ body {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 0.45rem;
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 0.35rem;
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 0.21rem;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 0.18rem;
 }
 
 h5 {
-  font-size: 2.5rem;
+  font-size: 0.16rem;
 }
 
 h6 {
-  font-size: 2rem;
+  font-size: 0.14rem;
 }
 
 p,
 span {
-  font-size: 1.5rem;
+  font-size: 0.12rem;
 }
 
 @media screen and (min-width: $breakpoint-sm) {
   html {
-    font-size: 0.9vw;
+    font-size: 110px;
   }
 }
 
 @media screen and (min-width: $breakpoint-md) {
   html {
-    font-size: 0.8vw;
+    font-size: 120px;
   }
 }
 
 @media screen and (min-width: $breakpoint-lg) {
   html {
-    font-size: 0.7vw;
+    font-size: 130px;
   }
 }
 
 @media screen and (min-width: $breakpoint-xl) {
   html {
-    font-size: 0.6vw;
+    font-size: 140px;
   }
 }
 
 @media screen and (min-width: $breakpoint-xxl) {
   html {
-    font-size: 0.5vw;
+    font-size: 150px;
   }
 }

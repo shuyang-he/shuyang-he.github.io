@@ -1,9 +1,13 @@
 import React from "react";
 
-const makeStyle = (size = 1) => {
+const makeStyle = (size = 0) => {
+  let basis = "auto";
+  if (size > 0) {
+    basis = `${(size / 12) * 100}%`;
+  }
   return {
     display: "flex",
-    flexBasis: `${(size / 12) * 100}%`,
+    flexBasis: basis,
   };
 };
 

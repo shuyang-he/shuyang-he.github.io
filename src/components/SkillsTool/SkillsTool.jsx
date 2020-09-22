@@ -9,7 +9,7 @@ const skillsTool = () => {
     <Row className={`skills-tool`}>
       {data.map((item, index) => {
         return (
-          <Col key={index} size={4} className={`skills-tool__item`}>
+          <Col key={index} className={`skills-tool__item`}>
             <img src={item} className={`skills-tool__img`} />
           </Col>
         );

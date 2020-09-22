@@ -1,15 +1,17 @@
 .skills-tool {
-  $img-size: 6rem;
+  $img-size: 0.5rem;
   $item-size: $img-size * 1.5;
 
-  margin-bottom: 10rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
 
   &__item {
-    min-width: $item-size;
+    width: $item-size * 3;
     height: $item-size;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
   }
 
   &__img {

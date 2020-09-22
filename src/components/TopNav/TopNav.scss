@@ -78,7 +78,7 @@
 @media screen and (min-width: $breakpoint-xl) {
   .top-nav {
     $nav-height: 100vh;
-    $img-size: 20rem;
+    $img-size: 1.3rem;
 
     top: 0px;
     bottom: 0px;
@@ -99,7 +99,7 @@
     &__img {
       width: $img-size;
       height: $img-size;
-      border: 1rem solid var(--color-dim-medium);
+      border: 0.08rem solid var(--color-dim-medium);
     }
   }
 }
