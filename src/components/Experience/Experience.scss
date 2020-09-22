@@ -5,17 +5,17 @@
   flex-direction: column;
   align-items: flex-start;
   font-family: var(--font-family-sans-serif);
-  margin-bottom: 50px;
+  margin-bottom: 10rem;
 
   &__title {
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
   }
 
   &__duty {
     font-weight: 700;
     color: $content-color;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
   }
 
   &__content {
@@ -23,13 +23,13 @@
     flex-direction: column;
     align-items: flex-start;
     list-style: circle outside none;
-    padding-left: 20px;
-    margin-bottom: 20px;
+    padding-left: 3rem;
+    margin-bottom: 1em;
   }
 
   &__item {
     color: $content-color;
-    margin-bottom: 20px;
+    margin-bottom: 1.5em;
   }
 
   &__duration {
