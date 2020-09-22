@@ -34,10 +34,14 @@ class App extends Component {
                 </SectionTitle>
               </Section>
               <Section>
-                <SectionTitle title={`PROJECTS`}></SectionTitle>
+                <SectionTitle title={`PROJECTS`}>
+                  <Projects />
+                </SectionTitle>
               </Section>
               <Section>
-                <SectionTitle title={`SKILLS`}></SectionTitle>
+                <SectionTitle title={`SKILLS`}>
+                  <Skills />
+                </SectionTitle>
               </Section>
             </Main>
           </Route>

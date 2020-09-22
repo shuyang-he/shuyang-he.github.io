@@ -1,0 +1,30 @@
+.skills {
+  $content-color: var(--color-dim-medium);
+
+  font-family: var(--font-family-sans-serif);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__tool {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tool-title {
+    color: $content-color;
+    font-weight: 900;
+    margin-bottom: 1em;
+  }
+
+  &__workflow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__workflow-title {
+    color: $content-color;
+    font-weight: 900;
+    margin-bottom: 1em;
+  }
+}

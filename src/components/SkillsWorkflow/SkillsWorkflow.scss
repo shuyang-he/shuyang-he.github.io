@@ -1,0 +1,17 @@
+.skills-workflow {
+  $content-color: var(--color-dim-medium);
+
+  font-family: var(--font-family-sans-serif);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  &__item {
+    margin-bottom: 1em;
+  }
+
+  &__title {
+    color: $content-color;
+  }
+}
