@@ -1,18 +1,20 @@
 import React from "react";
 import data from "./SkillsToolData";
 import "./SkillsTool.scss";
+import Row from "../../containers/Row/Row";
+import Col from "../../containers/Col/Col";
 
 const skillsTool = () => {
   return (
-    <ul className={`skills-tool`}>
+    <Row className={`skills-tool`}>
       {data.map((item, index) => {
         return (
-          <li key={index} className={`skills-tool__item`}>
+          <Col key={index} size={4} className={`skills-tool__item`}>
             <img src={item} className={`skills-tool__img`} />
-          </li>
+          </Col>
         );
       })}
-    </ul>
+    </Row>
   );
 };
 

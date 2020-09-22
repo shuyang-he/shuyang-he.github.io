@@ -1,14 +1,18 @@
 import React from "react";
 
-const style = (size) => {
+const makeStyle = (size = 1) => {
   return {
     display: "flex",
     flexBasis: `${(size / 12) * 100}%`,
   };
 };
 
-const col = ({ children, size }) => {
-  return <div style={() => style(size)}>{children}</div>;
+const col = ({ children, className, size }) => {
+  return (
+    <div style={makeStyle(size)} className={className}>
+      {children}
+    </div>
+  );
 };
 
 export default col;
