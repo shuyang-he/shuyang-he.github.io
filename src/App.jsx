@@ -24,22 +24,22 @@ class App extends Component {
                 <About />
               </Section>
               <Section>
-                <SectionTitle title={`EDUCATION`}>
+                <SectionTitle id={`education`} title={`EDUCATION`}>
                   <Education />
                 </SectionTitle>
               </Section>
               <Section>
-                <SectionTitle title={`EXPERIENCE`}>
+                <SectionTitle id={`experience`} title={`EXPERIENCE`}>
                   <Experience />
                 </SectionTitle>
               </Section>
               <Section>
-                <SectionTitle title={`PROJECTS`}>
+                <SectionTitle id={`projects`} title={`PROJECTS`}>
                   <Projects />
                 </SectionTitle>
               </Section>
               <Section>
-                <SectionTitle title={`SKILLS`}>
+                <SectionTitle id={`skills`} title={`SKILLS`}>
                   <Skills />
                 </SectionTitle>
               </Section>
