@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import TopNav from "./components/TopNav/TopNav";
 import NavBanner from "./components/NavBanner/NavBanner";
 import Main from "./containers/Main/Main";
@@ -14,7 +14,7 @@ import Skills from "./components/Skills/Skills";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <TopNav />
         <NavBanner />
         <Switch>
@@ -47,7 +47,7 @@ class App extends Component {
           </Route>
           <Route path="*">{/* <NotFound /> */}</Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
