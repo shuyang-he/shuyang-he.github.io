@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 const PORT = process.env.PORT || 3000;
-const ASSET_PATH = process.env.ASSET_PATH || "/";
+const ASSET_PATH = process.env.ASSET_PATH || "../docs";
 
 module.exports = {
   mode: "development",
@@ -53,6 +53,7 @@ module.exports = {
       template: path.resolve(__dirname, "./src/index.html"),
       inject: "head",
       scriptLoading: "defer",
+      favicon: path.resolve(__dirname, "./src/favicon.ico"),
     }),
     new CopyPlugin({
       patterns: [
