@@ -4,7 +4,7 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension/developmentOnly";
 
 const composeEnhancers = composeWithDevTools({});
-
+console.log(process.env.NODE_ENV);
 let store;
 const midwares = [thunk];
 
