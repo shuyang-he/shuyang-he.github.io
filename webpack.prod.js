@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 const PORT = process.env.PORT || 3000;
-const ASSET_PATH = process.env.ASSET_PATH || "./";
+const ASSET_PATH = process.env.ASSET_PATH || "/";
 
 module.exports = merge(common, {
   mode: "production",

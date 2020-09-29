@@ -3,7 +3,7 @@ const common = require("./webpack.common.js");
 const path = require("path");
 
 const PORT = process.env.PORT || 3000;
-const ASSET_PATH = process.env.ASSET_PATH || "./";
+const ASSET_PATH = process.env.ASSET_PATH || "/";
 
 module.exports = merge(common, {
   mode: "development",
