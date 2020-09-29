@@ -5,19 +5,9 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 const PORT = process.env.PORT || 3000;
 const ASSET_PATH = process.env.ASSET_PATH || "./";
-debugger;
+
 module.exports = {
-  mode: "development",
   entry: path.resolve(__dirname, "./src/index.jsx"),
-  devtool: "inline-source-map",
-  devServer: {
-    contentBase: "./docs",
-    port: PORT,
-    historyApiFallback: true,
-    proxy: {
-      "/api": "http://localhost:8000",
-    },
-  },
   resolve: {
     extensions: [".js", ".jsx"],
   },
@@ -27,14 +17,6 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loaders: "babel-loader",
-      },
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
