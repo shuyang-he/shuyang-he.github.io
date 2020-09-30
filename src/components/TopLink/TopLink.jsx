@@ -1,5 +1,5 @@
 import React from "react";
-import "./Toplink.scss";
+import "./TopLink.scss";
 
 const topLink = ({ links }) => {
   return (
