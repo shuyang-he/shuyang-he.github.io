@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: "development",
   devtool: "inline-source-map",
   devServer: {
-    contentBase: "./docs",
+    contentBase: "./public",
     port: PORT,
     historyApiFallback: true,
     proxy: {
