@@ -1,6 +1,6 @@
 import React from "react";
 import data from "./SkillsData";
-import "./Skills.scss";
+// import "./Skills.scss";
 import SkillsTool from "../SkillsTool/SkillsTool";
 import SkillsWorkflow from "../SkillsWorkflow/SkillsWorkflow";
 
