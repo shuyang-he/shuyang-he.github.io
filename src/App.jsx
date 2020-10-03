@@ -9,7 +9,7 @@ import About from "./components/About/About";
 import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
-import Skills from "./components/skills/skills";
+// import Skills from "./components/Skills/Skills";
 
 class App extends Component {
   render() {
@@ -40,7 +40,7 @@ class App extends Component {
               </Section>
               <Section>
                 <SectionTitle id={`skills`} title={`SKILLS`}>
-                  <Skills />
+                  {/* <Skills /> */}
                 </SectionTitle>
               </Section>
             </Main>
