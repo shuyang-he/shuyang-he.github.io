@@ -8,8 +8,8 @@ import SectionTitle from "./components/SectionTitle/SectionTitle";
 import About from "./components/About/About";
 import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
-import Projects from "./components/Project/Project";
-import Skills from "./components/Projects/Projects";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Abilities/Abilities";
 
 class App extends Component {
   render() {
