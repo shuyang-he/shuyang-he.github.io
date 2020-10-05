@@ -9,7 +9,7 @@ import "./reset.scss";
 import "./typography.scss";
 import "./base.scss";
 
-if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV === "production") {
   disableReactDevTools();
 }
 
