@@ -45,6 +45,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "@babel/runtime": "^7.11.2",
+    "express": "^4.17.1",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
