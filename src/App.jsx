@@ -20,26 +20,26 @@ class App extends Component {
         <Switch>
           <Route path="/">
             <Main>
-              <Section>
+              <Section id={`about`}>
                 <About />
               </Section>
-              <Section>
-                <SectionTitle id={`education`} title={`EDUCATION`}>
+              <Section id={`education`}>
+                <SectionTitle title={`EDUCATION`}>
                   <Education />
                 </SectionTitle>
               </Section>
-              <Section>
-                <SectionTitle id={`experience`} title={`EXPERIENCE`}>
+              <Section id={`experience`}>
+                <SectionTitle title={`EXPERIENCE`}>
                   <Experience />
                 </SectionTitle>
               </Section>
-              <Section>
-                <SectionTitle id={`projects`} title={`PROJECTS`}>
+              <Section id={`projects`}>
+                <SectionTitle title={`PROJECTS`}>
                   <Projects />
                 </SectionTitle>
               </Section>
-              <Section>
-                <SectionTitle id={`skills`} title={`SKILLS`}>
+              <Section id={`skills`}>
+                <SectionTitle title={`SKILLS`}>
                   <Skills />
                 </SectionTitle>
               </Section>

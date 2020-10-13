@@ -44,9 +44,14 @@
       transform-origin: right;
     }
 
-    &:active::after {
-      transform: scaleX(1);
-      transform-origin: right;
+    &--active {
+      color: var(--color-main);
+
+      &::after {
+        transform: scaleX(1);
+        transform-origin: right;
+        background-color: var(--color-main);
+      }
     }
   }
 }

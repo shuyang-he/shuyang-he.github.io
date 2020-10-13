@@ -8,6 +8,7 @@ const data = [
   "assets/img/sass.svg",
   "assets/img/express.svg",
   "assets/img/nodejs.svg",
+  "assets/img/docker.svg",
   "assets/img/jquery.svg",
   "assets/img/java.svg",
   "assets/img/mongodb.svg",
