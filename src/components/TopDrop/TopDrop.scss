@@ -24,7 +24,7 @@
 
   &__link {
     position: relative;
-    color: var(--color-light);
+    color: var(--color-text-dark);
 
     &::after {
       content: "";
@@ -32,25 +32,20 @@
       left: 0px;
       bottom: -0.2em;
       width: 100%;
-      height: 0.1em;
-      background-color: var(--color-light);
+      height: 1px;
+      background-color: var(--color-text-dark);
       transform: scaleX(0);
-      transform-origin: left;
+      transform-origin: center;
       transition: $nav-transition-duration ease;
     }
 
     &:hover::after {
       transform: scaleX(1);
-      transform-origin: right;
     }
 
     &--active {
-      color: var(--color-main);
-
       &::after {
         transform: scaleX(1);
-        transform-origin: right;
-        background-color: var(--color-main);
       }
     }
   }

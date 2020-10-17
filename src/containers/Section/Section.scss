@@ -1,7 +1,8 @@
 .section {
   min-height: 100vh;
-  border-bottom: 1px solid var(--color-bright-medium);
+  border-bottom: 1px solid var(--color-text-light);
   margin-bottom: 2px;
+  background-color: var(--color-section-background);
 
   &__container {
     min-height: 100vh;

@@ -1,5 +1,5 @@
 .about {
-  $content-color: var(--color-dim-medium);
+  $content-color: var(--color-text-light);
 
   width: 100%;
   height: 100vh;
@@ -9,7 +9,7 @@
   margin: 0 auto;
 
   &__name {
-    font-weight: 900;
+    color: var(--color-text-dark);
     margin-bottom: 0.05rem;
   }
 

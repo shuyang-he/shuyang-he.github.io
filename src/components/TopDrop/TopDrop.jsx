@@ -1,14 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { handleTopDropDisplay } from "../../actions/TopDropDisplay";
 import "./TopDrop.scss";
 
-const topDrop = ({
-  links,
-  topDropDisplay,
-  sectionDisplay,
-  handleTopDropDisplay,
-}) => {
+const topDrop = ({ links, topDropDisplay, sectionDisplay }) => {
   return (
     <ul className={`top-drop ${topDropDisplay ? "top-drop--active" : ""}`}>
       {links.map((item, index) => {
@@ -22,9 +16,6 @@ const topDrop = ({
                     ? "top-drop__link--active"
                     : ""
                 }`}
-                onClick={() => {
-                  handleTopDropDisplay(topDropDisplay);
-                }}
               >
                 {item.title}
               </a>
@@ -43,12 +34,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    handleTopDropDisplay: (topDropDisplay) => {
-      dispatch(handleTopDropDisplay(topDropDisplay));
-    },
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(topDrop);
+export default connect(mapStateToProps)(topDrop);

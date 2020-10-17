@@ -1,5 +1,5 @@
 .skills {
-  $content-color: var(--color-dim-medium);
+  $content-color: var(--color-text-dark);
 
   font-family: var(--font-family-sans-serif);
   display: flex;
@@ -13,7 +13,6 @@
 
   &__tool-title {
     color: $content-color;
-    font-weight: 900;
     margin-bottom: 1em;
   }
 
@@ -24,7 +23,6 @@
 
   &__workflow-title {
     color: $content-color;
-    font-weight: 900;
     margin-bottom: 1em;
   }
 }

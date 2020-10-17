@@ -5,8 +5,8 @@ html {
 }
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  line-height: 1.3;
+  font-family: var(--san-serif-font);
+  line-height: 1.5;
 }
 
 h1 {
@@ -14,28 +14,28 @@ h1 {
 }
 
 h2 {
-  font-size: 0.35rem;
+  font-size: 0.25rem;
 }
 
 h3 {
-  font-size: 0.21rem;
-}
-
-h4 {
   font-size: 0.18rem;
 }
 
-h5 {
+h4 {
   font-size: 0.16rem;
 }
 
-h6 {
+h5 {
   font-size: 0.14rem;
+}
+
+h6 {
+  font-size: 0.12rem;
 }
 
 p,
 span {
-  font-size: 0.12rem;
+  font-size: 0.1rem;
 }
 
 @media screen and (min-width: $breakpoint-sm) {

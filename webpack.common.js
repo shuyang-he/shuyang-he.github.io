@@ -18,12 +18,16 @@ module.exports = {
         loaders: "babel-loader",
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|jpg|gif)$/,
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
           outputPath: "assets/img",
         },
+      },
+      {
+        test: /\.svg$/,
+        use: ["@svgr/webpack"],
       },
     ],
   },

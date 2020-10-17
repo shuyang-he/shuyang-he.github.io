@@ -1,6 +1,6 @@
 const data = {
-  tool: "PROGRAMMING LANGUAGES AND TOOLS",
-  workflow: "WORKFLOW",
+  tool: "Programming Languages and Tools",
+  workflow: "Workflow",
 };
 
 export default data;

@@ -1,28 +1,111 @@
+@import "../../base";
+
 .education {
-  $content-color: var(--color-dim-medium);
+  $title-color: var(--color-text-dark);
+  $content-color: var(--color-text-light);
+  $img-size: 0.3rem;
+  $transition-duration: 0.3s;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.7rem;
+  padding: 0.2rem;
+  box-shadow: 0 0.02rem 0.07rem rgba($color: #000000, $alpha: 0.2);
+  transition: background-color $transition-duration ease;
+
+  &:hover {
+    background-color: var(--color-main);
+    box-shadow: 0 0.02rem 0.07rem rgba($color: #000000, $alpha: 0.5);
+
+    .education__icon {
+      path:nth-child(1) {
+        fill: var(--color-main);
+      }
+
+      path:nth-child(2) {
+        fill: var(--color-section-background);
+      }
+    }
+
+    .education__title {
+      color: var(--color-section-background);
+    }
+
+    .education__degree {
+      color: var(--color-section-background);
+    }
+
+    .education__major {
+      color: var(--color-section-background);
+    }
+
+    .education__duration {
+      color: var(--color-section-background);
+    }
+  }
+
+  &__icon-con {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 13%;
+  }
+
+  &__icon {
+    width: $img-size;
+    height: $img-size;
+
+    path:nth-child(1) {
+      fill: var(--color-section-background);
+      transition: $transition-duration ease;
+    }
+
+    path:nth-child(2) {
+      fill: var(--color-main);
+      transition: $transition-duration ease;
+    }
+  }
+
+  &__content-con {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 87%;
+  }
 
   &__title {
-    font-weight: 900;
+    color: $title-color;
     margin-bottom: 0.5em;
+    transition: color $transition-duration ease;
   }
 
   &__degree {
-    font-weight: 700;
     color: $content-color;
     margin-bottom: 1em;
+    transition: color $transition-duration ease;
   }
 
   &__major {
     color: $content-color;
     margin-bottom: 1em;
+    transition: color $transition-duration ease;
   }
 
   &__duration {
     color: $content-color;
+    transition: color $transition-duration ease;
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .education {
+    padding: 0.3rem;
+
+    &__icon-con {
+      flex-basis: 10%;
+    }
+
+    &__content-con {
+      flex-basis: 90%;
+    }
   }
 }

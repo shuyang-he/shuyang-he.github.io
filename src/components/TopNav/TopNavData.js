@@ -1,10 +1,10 @@
 const data = {
   links: [
-    { title: "ABOUT", content: "#about" },
-    { title: "EDUCATION", content: "#education" },
-    { title: "EXPERIENCE", content: "#experience" },
-    { title: "PROJECTS", content: "#projects" },
-    { title: "SKILLS", content: "#skills" },
+    { title: "About", content: "#about" },
+    { title: "Education", content: "#education" },
+    { title: "Experience", content: "#experience" },
+    { title: "Projects", content: "#projects" },
+    { title: "Skills", content: "#skills" },
   ],
 };
 

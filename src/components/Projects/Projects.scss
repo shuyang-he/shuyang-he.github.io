@@ -1,14 +1,80 @@
+@import "../../base";
+
 .projects {
-  $content-color: var(--color-dim-medium);
+  $title-color: var(--color-text-dark);
+  $content-color: var(--color-text-light);
+  $img-size: 0.3rem;
+  $transition-duration: 0.3s;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   font-family: var(--font-family-sans-serif);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  padding: 0.2rem;
+  box-shadow: 0 0.02rem 0.07rem rgba($color: #000000, $alpha: 0.2);
+  transition: background-color $transition-duration ease;
+
+  &:hover {
+    background-color: var(--color-main);
+    box-shadow: 0 0.02rem 0.07rem rgba($color: #000000, $alpha: 0.5);
+
+    .projects__icon {
+      path:nth-child(1) {
+        fill: var(--color-section-background);
+      }
+
+      path:nth-child(2) {
+        fill: var(--color-main);
+      }
+    }
+
+    .projects__title {
+      color: var(--color-section-background);
+    }
+
+    .projects__item {
+      color: var(--color-section-background);
+
+      &::before {
+        color: var(--color-section-background);
+      }
+    }
+
+    .projects__duration {
+      color: var(--color-section-background);
+    }
+  }
+
+  &__icon-con {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 13%;
+  }
+
+  &__icon {
+    width: $img-size;
+    height: $img-size;
+
+    path:nth-child(1) {
+      fill: var(--color-main);
+      transition: $transition-duration ease;
+    }
+
+    path:nth-child(2) {
+      fill: var(--color-section-background);
+      transition: $transition-duration ease;
+    }
+  }
+
+  &__content-con {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 87%;
+  }
 
   &__title {
-    font-weight: 900;
+    color: $title-color;
     margin-bottom: 0.5em;
   }
 
@@ -23,13 +89,13 @@
   &__item {
     position: relative;
     color: $content-color;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.15rem;
 
     &::before {
       content: ".";
       position: absolute;
-      top: -0.73em;
-      left: -0.4em;
+      top: -0.84em;
+      left: -0.35em;
       font-size: 0.5em;
       color: $content-color;
     }
@@ -37,5 +103,19 @@
 
   &__duration {
     color: $content-color;
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .projects {
+    padding: 0.3rem;
+
+    &__icon-con {
+      flex-basis: 10%;
+    }
+
+    &__content-con {
+      flex-basis: 90%;
+    }
   }
 }

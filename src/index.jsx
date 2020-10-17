@@ -6,8 +6,8 @@ import { disableReactDevTools } from "./helpers/utils";
 import App from "./App";
 import "normalize.css";
 import "./reset.scss";
-import "./typography.scss";
 import "./base.scss";
+import "./typography.scss";
 
 if (process.env.NODE_ENV === "production") {
   disableReactDevTools();

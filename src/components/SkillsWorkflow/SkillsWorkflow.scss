@@ -1,5 +1,5 @@
 .skills-workflow {
-  $content-color: var(--color-dim-medium);
+  $content-color: var(--color-text-light);
 
   font-family: var(--font-family-sans-serif);
   display: flex;
@@ -15,8 +15,8 @@
     &::before {
       content: ".";
       position: absolute;
-      top: -0.71em;
-      left: -0.4em;
+      top: -0.82em;
+      left: -0.35em;
       font-size: 0.5em;
       color: $content-color;
     }
