@@ -10,6 +10,7 @@ import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
+import NotFound from "./components/NotFound/NotFound";
 
 class App extends Component {
   render() {
@@ -45,7 +46,11 @@ class App extends Component {
               </Section>
             </Main>
           </Route>
-          <Route path="*">{/* <NotFound /> */}</Route>
+          <Route path="*">
+            <Section>
+              <NotFound />
+            </Section>
+          </Route>
         </Switch>
       </BrowserRouter>
     );
