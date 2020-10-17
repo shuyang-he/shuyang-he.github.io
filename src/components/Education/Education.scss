@@ -76,6 +76,7 @@
     color: $title-color;
     margin-bottom: 0.5em;
     transition: color $transition-duration ease;
+    font-weight: bold;
   }
 
   &__degree {
