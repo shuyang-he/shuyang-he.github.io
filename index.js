@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
 
-app.use("/", express.static(__dirname + "/public"));
-app.use("/:page", express.static(__dirname + "/public"));
+const PORT = process.env.PORT || 3000;
 
-const server = app.listen(process.env.PORT || 3000);
-server.on("listening", () => console.log(`Server listening on ${process.env.PORT || 3000}`));
+app.use(express.static(__dirname + "/public"));
+
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
+});

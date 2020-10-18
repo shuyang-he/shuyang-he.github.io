@@ -9,11 +9,13 @@ import "./reset.scss";
 import "./base.scss";
 import "./typography.scss";
 
+let renderMethod = ReactDOM.render;
 if (process.env.NODE_ENV === "production") {
+  renderMethod = ReactDOM.hydrate;
   disableReactDevTools();
 }
 
-ReactDOM.render(
+renderMethod(
   <Provider store={store}>
     <App />
   </Provider>,

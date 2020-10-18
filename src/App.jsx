@@ -19,7 +19,7 @@ class App extends Component {
         <TopNav />
         <NavBanner />
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <Main>
               <Section id={`about`}>
                 <About />
@@ -47,9 +47,11 @@ class App extends Component {
             </Main>
           </Route>
           <Route path="*">
-            <Section>
-              <NotFound />
-            </Section>
+            <Main>
+              <Section>
+                <NotFound />
+              </Section>
+            </Main>
           </Route>
         </Switch>
       </BrowserRouter>
