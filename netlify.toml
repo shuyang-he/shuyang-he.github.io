@@ -57,6 +57,13 @@ command = "echo 'special branch'"
 # For context-specific rules, use _headers or _redirects files, which are
 # PER-DEPLOY.
 
+# The following redirect is intended for use with most SPAs that handle
+# routing internally.
+[[redirects]]
+from = "/*"
+status = 200
+to = "/index.html"
+
 # A basic redirect rule
 [[redirects]]
 from = "/*"
@@ -97,13 +104,6 @@ conditions = {Role = ["admin"]}
 force = true
 from = "/gated-path"
 status = 200
-
-# The following redirect is intended for use with most SPAs that handle
-# routing internally.
-[[redirects]]
-from = "/*"
-status = 200
-to = "/index.html"
 
 [[headers]]
 # Define which paths this specific [[headers]] block will cover.
