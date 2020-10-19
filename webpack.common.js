@@ -44,14 +44,14 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, "./src/assets/img"),
-          to: path.resolve(__dirname, "./public/assets/img"),
+          to: path.resolve(__dirname, "./docs/assets/img"),
         },
       ],
     }),
   ],
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "./public"),
+    path: path.resolve(__dirname, "./docs"),
     publicPath: ASSET_PATH,
   },
 };
