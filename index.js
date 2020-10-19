@@ -5,10 +5,10 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/docs"));
 
 app.get("*", (req, res) => {
-  const indexFile = path.resolve(__dirname, "/public/index.html");
+  const indexFile = path.resolve(__dirname, "/docs/index.html");
   fs.readFile(indexFile, "utf8", (err, data) => {
     if (err) {
       return res.status(500).send(err);
