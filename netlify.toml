@@ -9,7 +9,7 @@ base = "/"
 # the build. This is relative to the base directory if one has been set, or the
 # root directory if a base has not been set. This sample publishes the
 # directory located at the absolute path "root/project/build-output"
-publish = "public/"
+publish = "docs/"
 
 # Default build command.
 command = "npm run build"
@@ -22,12 +22,12 @@ functions = "functions/"
 [context.production]
 command = "npm run build"
 environment = {ACCESS_TOKEN = "super secret", NODE_VERSION = "12.18.3"}
-publish = "public/"
+publish = "docs/"
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
 [context.deploy-preview]
-publish = "public/"
+publish = "docs/"
 
 # Here is another way to define context specific environment variables.
 [context.deploy-preview.environment]
