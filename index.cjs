@@ -1,11 +1,11 @@
 const path = require("path");
 const fs = require("fs");
 const express = require("express");
-const app = express();
 
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(__dirname + "/docs"));
+app.use(express.static(path.resolve(__dirname + "/docs")));
 
 app.get("*", (req, res) => {
   const indexFile = path.resolve(__dirname, "/docs/index.html");
