@@ -1,6 +1,6 @@
 import React from "react";
 import data from "./AboutData";
-import AboutLinks from "../AboutLinks/AboutLinks";
+import AboutLinks from "./Links/Links";
 import "./About.scss";
 
 const about = () => {

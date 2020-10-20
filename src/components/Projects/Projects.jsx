@@ -5,7 +5,7 @@ import Icon from "../../assets/img/toolbox.svg";
 
 const projects = () => {
   return (
-    <ul>
+    <ul className={`projects-con`}>
       {data.content.map((item, index) => {
         return (
           <li key={index} className={`projects`}>

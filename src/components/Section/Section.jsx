@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { connect } from "react-redux";
 import { handleSectionDisplay } from "../../actions/SectionDisplay";
-import Container from "../../containers/Container/Container";
+import Container from "../Container/Container";
 import "./Section.scss";
 import useIntersect from "../../helpers/useIntersect";
 

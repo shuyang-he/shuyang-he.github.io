@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import TopNav from "./components/TopNav/TopNav";
-import NavBanner from "./components/NavBanner/NavBanner";
-import Main from "./containers/Main/Main";
-import Section from "./containers/Section/Section";
-import SectionTitle from "./components/SectionTitle/SectionTitle";
+import Nav from "./components/Nav/Nav";
+import Banner from "./components/Banner/Banner";
+import Main from "./components/Main/Main";
+import Section from "./components/Section/Section";
+import Title from "./components/Title/Title";
 import About from "./components/About/About";
 import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
@@ -16,8 +16,8 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <TopNav />
-        <NavBanner />
+        <Nav />
+        <Banner />
         <Switch>
           <Route path="/" exact>
             <Main>
@@ -25,24 +25,20 @@ class App extends Component {
                 <About />
               </Section>
               <Section id={`education`}>
-                <SectionTitle title={`Education`}>
-                  <Education />
-                </SectionTitle>
+                <Title title={`Education`} />
+                <Education />
               </Section>
               <Section id={`experience`}>
-                <SectionTitle title={`Experience`}>
-                  <Experience />
-                </SectionTitle>
+                <Title title={`Experience`} />
+                <Experience />
               </Section>
               <Section id={`projects`}>
-                <SectionTitle title={`Projects`}>
-                  <Projects />
-                </SectionTitle>
+                <Title title={`Projects`} />
+                <Projects />
               </Section>
               <Section id={`skills`}>
-                <SectionTitle title={`Skills`}>
-                  <Skills />
-                </SectionTitle>
+                <Title title={`Skills`} />
+                <Skills />
               </Section>
             </Main>
           </Route>

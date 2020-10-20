@@ -5,7 +5,7 @@ import Icon from "../../assets/img/tie.svg";
 
 const experience = () => {
   return (
-    <ul>
+    <ul className={`experience-con`}>
       {data.content.map((item, index) => {
         return (
           <li key={index} className={`experience`}>

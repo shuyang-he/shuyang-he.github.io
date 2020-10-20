@@ -1,6 +1,6 @@
 import React from "react";
-import data from "./AboutLinksData";
-import "./AboutLinks.scss";
+import data from "./LinksData";
+import "./Links.scss";
 
 const aboutLinks = () => {
   return (

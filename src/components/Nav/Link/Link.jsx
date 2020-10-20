@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "./TopLink.scss";
+import "./Link.scss";
 
 const topLink = ({ links, sectionDisplay }) => {
   return (

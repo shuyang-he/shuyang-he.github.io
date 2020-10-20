@@ -1,12 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
 import { handleTopDropDisplay } from "../../actions/TopDropDisplay";
-import data from "./TopNavData";
-import Container from "../../containers/Container/Container";
-import Row from "../../containers/Row/Row";
-import TopLink from "../TopLink/TopLink";
-import TopDrop from "../TopDrop/TopDrop";
-import "./TopNav.scss";
+import data from "./NavData";
+import Container from "../Container/Container";
+import Row from "../Row/Row";
+import NavLink from "./Link/Link";
+import NavDrop from "./Drop/Drop";
+import "./Nav.scss";
 
 const topNav = ({ topDropDisplay, handleTopDropDisplay }) => {
   return (
@@ -15,7 +15,7 @@ const topNav = ({ topDropDisplay, handleTopDropDisplay }) => {
         <Container>
           <Row className={`top-nav__content`}>
             <div className={`top-nav__img`}></div>
-            <TopLink links={data.links} />
+            <NavLink links={data.links} />
             <button
               className={`top-nav__button ${
                 topDropDisplay ? "top-nav__button--active" : ""
@@ -33,7 +33,7 @@ const topNav = ({ topDropDisplay, handleTopDropDisplay }) => {
       </div>
       <div className={`top-nav__sub`}>
         <Container>
-          <TopDrop links={data.links} />
+          <NavDrop links={data.links} />
         </Container>
       </div>
     </div>

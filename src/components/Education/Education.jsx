@@ -5,7 +5,7 @@ import Icon from "../../assets/img/education.svg";
 
 const education = () => {
   return (
-    <ul>
+    <ul className={`education-con`}>
       {data.content.map((item, index) => {
         return (
           <li key={index} className={`education`}>

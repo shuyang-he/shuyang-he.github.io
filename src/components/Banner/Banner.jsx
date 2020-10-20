@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { handleTopDropDisplay } from "../../actions/TopDropDisplay";
-import "./NavBanner.scss";
+import "./Banner.scss";
 
 const navBanner = ({ topDropDisplay, handleTopDropDisplay }) => {
   return topDropDisplay ? (

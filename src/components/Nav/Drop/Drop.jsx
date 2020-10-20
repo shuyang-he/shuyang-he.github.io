@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "./TopDrop.scss";
+import "./Drop.scss";
 
 const topDrop = ({ links, topDropDisplay, sectionDisplay }) => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import data from "./SkillsToolData";
-import "./SkillsTool.scss";
-import Row from "../../containers/Row/Row";
-import Col from "../../containers/Col/Col";
+import data from "./ToolData";
+import "./Tool.scss";
+import Row from "../../Row/Row";
+import Col from "../../Col/Col";
 
 const skillsTool = () => {
   return (

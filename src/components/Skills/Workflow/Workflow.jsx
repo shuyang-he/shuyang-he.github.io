@@ -1,6 +1,6 @@
 import React from "react";
-import data from "./SkillsWorkflowData";
-import "./SkillsWorkflow.scss";
+import data from "./WorkflowData";
+import "./Workflow.scss";
 
 const skillsWorkflow = () => {
   return (
