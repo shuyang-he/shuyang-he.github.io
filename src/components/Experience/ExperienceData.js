@@ -1,7 +1,7 @@
 const data = {
-  icon: "assets/img/tie.svg",
   content: [
     {
+      icon: "assets/img/altomni.png",
       title: "Altomni",
       duty: "IPG Website",
       content: [
@@ -13,6 +13,7 @@ const data = {
       duration: "06/2020 - 08/2020",
     },
     {
+      icon: "assets/img/mp.png",
       title: "Mobile Programming LLC",
       duty: "Restaurant Recommendation Website",
       content: [

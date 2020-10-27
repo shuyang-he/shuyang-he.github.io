@@ -1,7 +1,6 @@
 import React from "react";
 import data from "./ExperienceData";
 import "./Experience.scss";
-import Icon from "../../assets/img/tie.svg";
 
 const experience = () => {
   return (
@@ -10,7 +9,7 @@ const experience = () => {
         return (
           <li key={index} className={`experience`}>
             <div className={`experience__icon-con`}>
-              <Icon className={`experience__icon`} />
+              <img src={item.icon} className={`experience__icon`} />
             </div>
             <div className={`experience__content-con`}>
               <h3 className={`experience__title`}>{item.title}</h3>

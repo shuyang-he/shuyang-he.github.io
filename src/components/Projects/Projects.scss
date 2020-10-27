@@ -37,6 +37,12 @@
       color: var(--color-section-background);
     }
 
+    .projects__img {
+      path:nth-child(1) {
+        fill: var(--color-section-background);
+      }
+    }
+
     .projects__item {
       color: var(--color-section-background);
 
@@ -71,16 +77,40 @@
     }
   }
 
-  &__content-con {
+  &__body-con {
     display: flex;
     flex-direction: column;
     flex-basis: 87%;
   }
 
+  &__title-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+  }
+
   &__title {
     color: $title-color;
-    margin-bottom: 0.5em;
     font-weight: bold;
+  }
+
+  &__link {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: $img-size * 0.8;
+    height: $img-size * 0.8;
+
+    path:nth-child(1) {
+      fill: var(--color-text-dark);
+      transition: $transition-duration ease;
+    }
   }
 
   &__content {

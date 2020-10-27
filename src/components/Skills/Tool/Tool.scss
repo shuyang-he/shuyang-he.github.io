@@ -1,6 +1,9 @@
+@import "../../../base.scss";
+
 .skills-tool {
   $img-size: 0.4rem;
   $item-size: $img-size * 1.7;
+  $transition-duration: $nav-transition-duration;
 
   align-items: center;
   margin-bottom: 0.7rem;
@@ -8,6 +11,7 @@
   &__item {
     width: $item-size * 1.3;
     height: $item-size;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +19,14 @@
     box-shadow: 0 0.03rem 0.07rem rgba($color: #000000, $alpha: 0.2);
     margin-right: 0.3rem;
     margin-bottom: 0.3rem;
+    transition: $transition-duration ease;
 
     &:hover {
       box-shadow: 0 0.03rem 0.07rem rgba($color: #000000, $alpha: 0.4);
+
+      .skills-tool__content-con {
+        opacity: 1;
+      }
     }
   }
 
@@ -26,5 +35,28 @@
     max-width: $img-size * 2;
     min-height: $img-size;
     max-height: $img-size * 1.3;
+  }
+
+  &__content-con {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: $transition-duration ease;
+    background-color: var(--color-main);
+  }
+
+  &__content {
+    color: var(--color-section-background);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: pre;
   }
 }

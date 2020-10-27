@@ -10,7 +10,10 @@ const skillsTool = () => {
       {data.map((item, index) => {
         return (
           <Col key={index} className={`skills-tool__item`}>
-            <img src={item} className={`skills-tool__img`} />
+            <img src={item.img} className={`skills-tool__img`} />
+            <div className={`skills-tool__content-con`}>
+              <h5 className={`skills-tool__content`}>{item.content}</h5>
+            </div>
           </Col>
         );
       })}

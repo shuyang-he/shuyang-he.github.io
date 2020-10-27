@@ -1,7 +1,6 @@
 import React from "react";
 import data from "./EducationData";
 import "./Education.scss";
-import Icon from "../../assets/img/education.svg";
 
 const education = () => {
   return (
@@ -10,7 +9,7 @@ const education = () => {
         return (
           <li key={index} className={`education`}>
             <div className={`education__icon-con`}>
-              <Icon className={`education__icon`} />
+              <img src={item.icon} className={`education__icon`} />
             </div>
             <div className={`education__content-con`}>
               <h3 className={`education__title`}>{item.title}</h3>
