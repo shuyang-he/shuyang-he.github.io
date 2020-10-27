@@ -1,9 +1,7 @@
-@import "../../../base.scss";
-
 .skills-tool {
   $img-size: 0.4rem;
   $item-size: $img-size * 1.7;
-  $transition-duration: $nav-transition-duration;
+  $transition-duration: 0.3s;
 
   align-items: center;
   margin-bottom: 0.7rem;

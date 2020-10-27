@@ -1,7 +1,7 @@
 const data = {
   name: "Shuyang He",
   contact: "maxhe2019@gmail.com     206-849-9105",
-  content: "Trained engineer seeking challenging job in front-end engineer.",
+  content: "A front end developer experienced in MVVM frameworks, responsive web design, RESTful API and Microservices",
 };
 
 export default data;
