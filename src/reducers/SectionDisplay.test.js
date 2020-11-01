@@ -9,6 +9,10 @@ const initialState = {
   skills: false,
 };
 
+const actionDefault = {
+  type: "DEFAULT"
+}
+
 const aboutTF = {
   type: "SECTION_CHANGE",
   payload: {
@@ -25,8 +29,19 @@ const aboutFT = {
   },
 }
 
+test("Correctly save state.", () => {
+  let state = sectionDisplay(undefined, actionDefault);
+  expect(state).toEqual({
+    about: true,
+    education: false,
+    experience: false,
+    projects: false,
+    skills: false
+  });
+});
+
 test("Correctly change about state.", () => {
-  let state = sectionDisplay(initialState, aboutTF);
+  let state = sectionDisplay(undefined, aboutTF);
   expect(state).toEqual({
     about: false,
     education: false,
@@ -61,7 +76,7 @@ const educationFT = {
 }
 
 test("Correctly change education state.", () => {
-  let state = sectionDisplay(initialState, educationTF);
+  let state = sectionDisplay(undefined, educationTF);
   expect(state).toEqual({
     about: true,
     education: false,
@@ -69,7 +84,7 @@ test("Correctly change education state.", () => {
     projects: false,
     skills: false,
   });
-  state = sectionDisplay(initialState, educationFT);
+  state = sectionDisplay(undefined, educationFT);
   expect(state).toEqual({
     about: true,
     education: true,
@@ -96,7 +111,7 @@ const experienceFT = {
 }
 
 test("Correctly change experience state.", () => {
-  let state = sectionDisplay(initialState, experienceTF);
+  let state = sectionDisplay(undefined, experienceTF);
   expect(state).toEqual({
     about: true,
     education: false,
@@ -104,7 +119,7 @@ test("Correctly change experience state.", () => {
     projects: false,
     skills: false,
   });
-  state = sectionDisplay(initialState, experienceFT);
+  state = sectionDisplay(undefined, experienceFT);
   expect(state).toEqual({
     about: true,
     education: false,
@@ -131,7 +146,7 @@ const projectsFT = {
 }
 
 test("Correctly change projects state.", () => {
-  let state = sectionDisplay(initialState, projectsTF);
+  let state = sectionDisplay(undefined, projectsTF);
   expect(state).toEqual({
     about: true,
     education: false,
@@ -139,7 +154,7 @@ test("Correctly change projects state.", () => {
     projects: false,
     skills: false,
   });
-  state = sectionDisplay(initialState, projectsFT);
+  state = sectionDisplay(undefined, projectsFT);
   expect(state).toEqual({
     about: true,
     education: false,
@@ -166,7 +181,7 @@ const skillsFT = {
 }
 
 test("Correctly change skills state.", () => {
-  let state = sectionDisplay(initialState, skillsTF);
+  let state = sectionDisplay(undefined, skillsTF);
   expect(state).toEqual({
     about: true,
     education: false,
@@ -174,7 +189,7 @@ test("Correctly change skills state.", () => {
     projects: false,
     skills: false,
   });
-  state = sectionDisplay(initialState, skillsFT);
+  state = sectionDisplay(undefined, skillsFT);
   expect(state).toEqual({
     about: true,
     education: false,

@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "\"# shuyang-he.github.io\"",
   "main": "index.js",
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["html"]
+  },
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --open --config webpack.dev.js",
