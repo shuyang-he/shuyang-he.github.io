@@ -9,6 +9,9 @@ module.exports = merge(common, {
   devtool: "source-map",
   optimization: {
     minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    splitChunks: {
+      chunks: 'all',
+    },
   },
   module: {
     rules: [
@@ -24,8 +27,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css",
+      filename: "css/[name].[contenthash].css",
     }),
   ],
 });

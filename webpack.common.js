@@ -50,7 +50,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: "[name].bundle.js",
+    filename: "js/[name].[contenthash].js",
     path: path.resolve(__dirname, "./docs"),
     publicPath: ASSET_PATH,
   },
