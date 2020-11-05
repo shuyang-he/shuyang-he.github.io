@@ -21,6 +21,10 @@ const data = [
     img: "assets/img/redux.svg",
   },
   {
+    content: "Jest",
+    img: "assets/img/jest.svg",
+  },
+  {
     content: "Webpack",
     img: "assets/img/webpack.svg",
   },
