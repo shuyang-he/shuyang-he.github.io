@@ -1,29 +1,18 @@
 const data = {
   content: [
     {
-      icon: "assets/img/altomni.png",
-      title: "Altomni",
-      duty: "IPG Website",
-      content: [
-        "Designed mobile first, responsive IPG company website structure with BEM methodologies.",
-        "Designed the CSS reset, grid system.",
-        "Implement website events by jQuery.",
-        "Web scraping information for Altomni candidate database using Puppeteer Node.js.",
-      ],
-      duration: "06/2020 - 08/2020",
-    },
-    {
       icon: "assets/img/mp.png",
       title: "Mobile Programming LLC",
-      duty: "Restaurant Recommendation Website",
+      duty: "Front End Developer",
       content: [
-        "Built up user information database with MongoDB.",
-        "Built up Model, Controller layer to accomplish register, login with Express Node.js.",
-        "Built React development environment using Webpack.",
-        "Built up register, login, and restaurant page with React and show restaurants location on map using Google Map API.",
-        "Using Redux to manage states and Bootstrap to manage styling.",
+        "Created website using HTML, CSS, JavaScript.",
+        "Rebuilt the website from jQuery to React.",
+        "Created full stack website application using MERN Stack technology.",
+        "Created personal website with mobile first, responsive web design using React, Redux, Sass, Webpack.",
+        "Deployed the website on Netlify and Docker.",
+        "Worked with client’s data team to collect and analyze data using Puppeteer node.js.",
       ],
-      duration: "08/2019 - 03/2020",
+      duration: "08/2019 - Present",
     },
   ],
 };

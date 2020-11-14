@@ -1,8 +1,7 @@
 const data = [
-  "Mobile-First, Responsive Design",
-  "Cross Browser Testing and Debugging",
+  "Mobile-First, Responsive Web Design",
   "RESTful API Design",
-  "Microservices Architecture"
+  "Web Scraping",
 ];
 
 export default data;

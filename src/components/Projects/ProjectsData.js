@@ -34,17 +34,6 @@ const data = {
       link: "https://github.com/shuyang-he/cse330-calendar",
       duration: "03/2018 - 04/2018",
     },
-    {
-      title: "Simplified SQL Database",
-      content: [
-        "Implemented the physical layer which supports integer and string type using Java.",
-        "Implemented aggregation functions like COUNT, AVG, SUM, MAX, MIN and parse SQL using jsqlparser API.",
-        "Implemented B+ tree index structure to the database using Java.",
-        "Implemented read lock, write lock and buffer to support rollback using Java.",
-      ],
-      link: "https://github.com/shuyang-he/database",
-      duration: "01/2018 - 05/2018",
-    },
   ],
 };
 
