@@ -3,12 +3,26 @@ const data = {
   img: "assets/img/github.svg",
   content: [
     {
+      title: "Personal Portfolio Website",
+      content: [
+        "Presented a personal portfolio with mobile first, responsive web design.",
+        "Designed organized CSS structure based on CSS root variables, CSS reset, Sass.",
+        "Built a grid system to change style on different target devices including computer, tablet, mobile phone.",
+        "Setup typography rules related to the grid system to keep the consistency of font styles.",
+        "Applied Webpack to bundle and compress the website’s resources automatically.",
+        "Componentized the website with React and Redux.",
+        "Packed the operating environment with Docker and deployed the website on Netlify.",
+      ],
+      link: "https://github.com/shuyang-he/shuyang-he.github.io",
+      duration: "09/2020 - Present",
+    },
+    {
       title: "Website Speed Tester",
       content: [
-        "Built CLI client interface using Node.js.",
-        "Built server using Node.js and use WebSocket to connect client.",
-        "Designed commands to test multiple websites response speed and calculate the min, max, average response time for each website using Promise.",
-        "Server can handle multiple tests and save all tests results in using file system.",
+        "Created a command-line based tester which can handle multiple tests and saved all tests results.",
+        "Built a CLI client interface and a server with Node.js.",
+        "Built the connection between server and client by WebSocket to connect multiple clients with fewer requests and bandwidth.",
+        "Implemented commands to test multiple websites response speed and calculated the min, max, average response time for each website.",
       ],
       link: "https://github.com/shuyang-he/silver_peak_demo",
       duration: "04/2020 - 05/2020",

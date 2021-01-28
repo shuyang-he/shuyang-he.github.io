@@ -87,6 +87,7 @@
     color: $content-color;
     margin-bottom: 1em;
     transition: color $transition-duration ease;
+    white-space: pre;
   }
 
   &__major {

@@ -41,6 +41,10 @@
       color: var(--color-section-background);
     }
 
+    .experience__subtitle {
+      color: var(--color-section-background);
+    }
+
     .experience__item {
       color: var(--color-section-background);
 
@@ -96,8 +100,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 0.2rem;
     margin-bottom: 0.1rem;
+  }
+
+  &__subtitle {
+    position: relative;
+    color: $content-color;
+    margin-bottom: 0.15rem;
+  }
+
+  &__subcontent {
+    margin-left: 0.2rem;
   }
 
   &__item {

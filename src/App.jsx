@@ -24,10 +24,6 @@ class App extends Component {
               <Section id={`about`}>
                 <About />
               </Section>
-              <Section id={`education`}>
-                <Title title={`Education`} />
-                <Education />
-              </Section>
               <Section id={`experience`}>
                 <Title title={`Experience`} />
                 <Experience />
@@ -35,6 +31,10 @@ class App extends Component {
               <Section id={`projects`}>
                 <Title title={`Projects`} />
                 <Projects />
+              </Section>
+              <Section id={`education`}>
+                <Title title={`Education`} />
+                <Education />
               </Section>
               <Section id={`skills`}>
                 <Title title={`Skills`} />

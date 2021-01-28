@@ -3,14 +3,22 @@ const data = {
     {
       icon: "assets/img/mp.png",
       title: "Mobile Programming LLC",
-      duty: "Front End Developer",
+      duty: "Software Developer Intern",
       content: [
-        "Created website using HTML, CSS, JavaScript.",
-        "Rebuilt the website from jQuery to React.",
-        "Created full stack website application using MERN Stack technology.",
-        "Created personal website with mobile first, responsive web design using React, Redux, Sass, Webpack.",
-        "Deployed the website on Netlify and Docker.",
-        "Worked with client’s data team to collect and analyze data using Puppeteer node.js.",
+        {
+          subtitle: "1. Built a landing page for a client company.",
+          subcontent: [
+            "Built the home page with jQuery and Bootstrap to match UI designer’s responsive web layout.",
+            "Rebuilt the home page with React and Redux to improve the maintainability and scalability.",
+          ],
+        },
+        {
+          subtitle:
+            "2. Collected potential candidate’s data for client’s data team.",
+          subcontent: [
+            "Built automated scripts with Puppeteer Node.js to replace the manual data collection process.",
+          ],
+        },
       ],
       duration: "08/2019 - Present",
     },

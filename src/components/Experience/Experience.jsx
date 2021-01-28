@@ -1,6 +1,7 @@
 import React from "react";
 import data from "./ExperienceData";
 import "./Experience.scss";
+import Duty from "./Duty/Duty";
 
 const experience = () => {
   return (
@@ -14,15 +15,11 @@ const experience = () => {
             <div className={`experience__content-con`}>
               <h3 className={`experience__title`}>{item.title}</h3>
               <h4 className={`experience__duty`}>{item.duty}</h4>
-              <ul className={`experience__content`}>
+              <ol className={`experience__content`}>
                 {item.content.map((item, index) => {
-                  return (
-                    <li key={index} className={`experience__item`}>
-                      <h5>{item}</h5>
-                    </li>
-                  );
+                  return <Duty duty={item} index={index} />
                 })}
-              </ul>
+              </ol>
               <h5 className={`experience__duration`}>{item.duration}</h5>
             </div>
           </li>

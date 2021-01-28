@@ -8,8 +8,7 @@ const data = [
     img: "assets/img/css3.svg",
   },
   {
-    content: `JavaScript
-      ES7+`,
+    content: "JavaScript",
     img: "assets/img/javascript.svg",
   },
   {
