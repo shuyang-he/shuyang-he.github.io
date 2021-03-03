@@ -9,6 +9,12 @@ import "./reset.scss";
 import "./base.scss";
 import "./typography.scss";
 
+import Tracker from '@asayerio/tracker';
+const tracker = new Tracker({
+  projectID: 7082522587491272
+});
+tracker.start();
+
 let renderMethod = ReactDOM.render;
 if (process.env.NODE_ENV === "production") {
   renderMethod = ReactDOM.hydrate;

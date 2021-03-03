@@ -5,7 +5,9 @@
   "main": "index.js",
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["html"]
+    "coverageReporters": [
+      "html"
+    ]
   },
   "scripts": {
     "test": "jest",
@@ -48,6 +50,7 @@
     "webpack-merge": "^5.1.4"
   },
   "dependencies": {
+    "@asayerio/tracker": "^5.6.6",
     "@babel/polyfill": "^7.11.5",
     "@babel/runtime": "^7.11.2",
     "@svgr/webpack": "^5.4.0",

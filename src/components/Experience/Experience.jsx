@@ -17,7 +17,7 @@ const experience = () => {
               <h4 className={`experience__duty`}>{item.duty}</h4>
               <ol className={`experience__content`}>
                 {item.content.map((item, index) => {
-                  return <Duty duty={item} index={index} />
+                  return <Duty key={index} duty={item} index={index} />
                 })}
               </ol>
               <h5 className={`experience__duration`}>{item.duration}</h5>
